@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@100;500&family=Volkhov&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="offcanvas offcanvas-start custom-width" data-bs-scroll="true">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="name-sitio">HotelFinder</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="d-flex mb-3">
+      <i class="bi bi-house-door-fill px-2 py-1"></i>
+      <a class="mb-0 px-0 py-2" href="index.html">Hoteles</a>
+    </div>
+    <div class="d-flex active">
+      <i class="bi bi-pencil-square px-2 py-1"></i>
+      <a class="px-0 py-2 mb-0" href="#">Reservas</a>
+    </div>
+  </div>
+</div>
+
+<header id="reservas-header" class="fixed-top">
+    <nav class="navbar navbar-expand-lg justify-content-start">
+      <p class="navbar-brand name-sitio mt-2 mb-0" onclick="abrirOffcanvas()">HotelFinder</p>
+      <form class="form-inline search-form mx-3">
+        <div class="input-group">
+          <input class="form-control buscar-hotel my-1" type="search" placeholder="Buscar cliente" aria-label="Buscar">
+          <div class="input-group-append">
+            <span class="search-icon"><i class="bi bi-search d-flex mx-2 mt-2"></i></span>
+          </div>
+        </div>
+      </form>
+    </nav>
+  </header>
+  
+  
+    <div id="container-tabla" class="w-100 px-5 my-5 pt-5" style="background: #FEFCFB;">
+      <h3>Reservas registradas</h3>
+      <p class="total-reservas"></p>
+      <div class="overflow-auto">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col" class="primer-td">Nro.</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Monto pagar</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Hotel</th>
+            <th scope="col">Puntaje</th>
+            <th scope="col" class="ultimo-td">Eliminar</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <!-- CONTENIDO DINAMICO -->
+
+          <!-- FIN CONTENIDO DINAMICO -->
+
+        </tbody>
+      </table>
+    </div>
+      </div>
+
+    <!-- MODAL 2 -->
+    <div class="modal fade" id="modalConfirmado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body text-center">
+          <!-- CONTENIDO DINAMICO -->
+        </div>
+      </div>
+    </div>
+
+
+      <script src="js/bootstrap.min.js"></script>
+      <script type="module" src="js/reservas.js"></script>
+      <script>
+        const sidebar = new bootstrap.Offcanvas(document.querySelector('.offcanvas '));
+
+       // Abrimos el sidebar
+       const abrirOffcanvas = () => sidebar.toggle();   
+      </script>
+
+</body>
+</html>

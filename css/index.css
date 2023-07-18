@@ -1,0 +1,422 @@
+/* SIDEBAR */
+.custom-width {
+    width: 250px;
+    background: rebeccapurple;
+  }
+
+.offcanvas-body .d-flex.active {
+    border-radius: 3.659px;
+    background: rgba(250, 116, 54, 0.24);
+    padding: 0px 7.318px;
+    align-items: center; 
+}
+
+.offcanvas-body .d-flex.active i {
+    color: #FA7436;
+    font-size: 25px;
+}
+
+.offcanvas-body .d-flex.active a {
+    font-family: Poppins;
+    font-size: 14.636px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 21.954px; /* 150% */
+    letter-spacing: 0.146px;
+    color: #FA7436;
+    text-decoration: none;
+}
+
+
+.offcanvas-body .d-flex i {
+    color: #5D7285;
+    font-size: 25px;
+}
+
+.offcanvas-body .d-flex a {
+    font-family: Poppins;
+    font-size: 14.636px;
+    font-weight: 600;
+    letter-spacing: 0.146px;
+    margin-top: 4px;
+    color: #5D7285;
+    text-decoration: none;
+}
+/* FIN SIDEBAR */
+
+/* HEADER */
+#reservas-header nav {
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+}
+#reservas-header .name-sitio, 
+#name-sitio {
+    color: var(--primary-b, #222);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 100% */
+    letter-spacing: 0.144px;
+    font-family: Volkhov;
+    margin-left: 20px;
+}
+
+#reservas-header .buscar-hotel {
+    position: relative;
+    border-radius: 10px;
+    background: #F4F7FF;
+    width: 145px;
+    height: 40px;
+    border: none;
+    font-family: Roboto;
+    font-weight: 400;
+    color: #333;
+    font-size: 13px;
+}
+
+#reservas-header .search-form {
+    padding: 10px;
+  }
+
+#reservas-header .search-form .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 50%;
+    color: #FFF;
+    background: #FA7436;
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    z-index: 100;
+  }
+/* FIN HEADER */
+
+/* CONTENIDO */
+#container .contenido {
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    padding: 20px;  
+}
+
+#container .nombre {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;
+}
+
+#container .resultados {
+    color: #6B6F7B;
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+#container #contenido-agregado .btn-reservar {
+    background-color: #FA7436;
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: #FFF;
+}
+
+#container #contenido-agregado .titulo {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+
+}
+
+#container #contenido-agregado .ubicacion {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+
+}
+
+#container #contenido-agregado .filtros {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    color: #6B6F7B;
+
+}
+
+
+#container #contenido-agregado .puntaje {
+    color:  #333;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+#container #contenido-agregado .estrellas  {
+    margin-top: -4px;
+ 
+ }
+
+#container #contenido-agregado .estrellas span {
+   color: #FA7436;
+   font-size: 20px;
+}
+
+#container #contenido-agregado .cantidad-reservas {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+ }
+
+ #container #contenido-agregado .precio {
+     font-family: Poppins;
+     font-size: 24px;
+     font-weight: 700;
+     color: #333;
+ }
+
+
+/* MODAL */
+#modalReserva .modal-title {
+    color: #282A2F;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 152%; /* 36.48px */
+}
+
+#modalReserva .aviso {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 160%; /* 35.2px */
+    color: rgba(34, 34, 38, 0.82);
+}
+
+#modalReserva .img-container {
+    width: 150px;
+    height: 140px;
+    background: linear-gradient(180deg, rgba(51, 51, 51, 0.00) 0%, #333 100%);
+}
+
+#modalReserva .img-container img {
+    border-radius: 7.56px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#modalReserva .titulo {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    color: #333;
+}
+
+#modalReserva .ubicacion,
+#modalReserva .filtros {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+}
+
+#modalReserva .filtros {
+    color: #6B6F7B;
+    line-height: 18.143px; /* 151.194% */
+}
+
+#modalReserva .puntaje {
+    color: #333;
+    font-size: 15.119px;
+    font-weight: 500;
+    font-family: Roboto;
+}
+
+#modalReserva .estrellas {
+    color: #FA7436;
+    font-size: 15.119px;
+    font-weight: 500;
+    font-family: Roboto;
+}
+
+#modalReserva .cantidad-reservas {
+    font-family: Roboto;
+    font-size: 10.94px;
+    font-weight: 400;
+    color: #333;
+}
+
+#modalReserva .precio {
+    font-family: Poppins;
+    font-size: 20.143px;
+    font-weight: 700;
+    color: #333;
+}
+
+#modalReserva .modal-input label {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 182%; /* 40.04px */
+    color: #2A224F;
+}
+
+#modalReserva .modal-input input {
+    font-family: Poppins;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+#modalReserva .modal-footer .btn.btn-secondary {
+    font-family: Poppins;
+    font-size: 15px;
+    border-radius: 18px;
+    border: solid #B7B7B7;
+    background: transparent;
+    color: black;
+}
+
+#modalReserva .modal-footer .btn.btn-primary {
+    font-family: Poppins;
+    font-size: 15px;
+    border-radius: 18px;
+    border: none;
+    background: #FA7436;
+    color: #FFF;
+}
+/* FIN MODAL */
+ 
+
+/* MODAL 2 */
+#modalConfirmado .bi-check-circle-fill {
+    font-size: 120px;
+    color: #FA7436;
+}
+
+#modalConfirmado h3 {
+    color: #282A2F;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 152%; /
+}
+
+
+#modalConfirmado p {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; 
+    color: rgba(34, 34, 38, 0.82);
+}
+
+
+
+/* FIN MODAL 2 */
+
+/* RESERVAS */
+#container-tabla h3 {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.012px; 
+    color: #212121;
+}
+
+#container-tabla .total-reservas {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28.012px;  
+    color: #B5B5C3;
+}
+
+#container-tabla table thead tr {
+    background: #F3F6F9;
+    border: transparent solid;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.48px;
+    color: #B5B5C3;
+    text-transform: uppercase;
+}
+
+#container-tabla table .primer-td {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#container-tabla table .ultimo-td {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#container-tabla table td {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    color: #464E5F;
+}
+
+#container-tabla table .second {
+    font-family: Poppins;
+    font-size: 10px;
+    font-weight: 500;
+    color: #B5B5C3;
+}
+
+
+/* #container-tabla table thead tr {
+    background: #F3F6F9;
+    border: transparent solid;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.48px;
+    color: #B5B5C3;
+    text-transform: uppercase;
+} */
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+    .offcanvas-start.custom-width {
+      width: 100%;
+    }  
+  }
+
+  @media (max-width: 790px) {
+    #modalReserva .img-container {
+        width: 100%;
+        height: 100%;
+    }
+    #modalReserva .col-md-8 {
+        margin-top: 10px;
+    }
+  }
+
+@media (min-width: 501px) {
+    .offcanvas-start.custom-width  {
+      width: 250px; 
+    }
+  }
+/* FIN RESPONSIVE */
+
+
+
